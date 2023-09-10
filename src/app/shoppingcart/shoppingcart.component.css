@@ -1,0 +1,16 @@
+.shpCartList{
+    margin-left: 5%;
+}
+
+#qtyReduce{
+    background-color: rgb(246, 69, 5);
+}
+
+#qtyIncrease{
+    background-color: rgb(3, 181, 3);
+}
+
+.itemQuantity{
+    width:45px;
+    text-align: center;
+}

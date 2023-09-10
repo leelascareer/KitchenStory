@@ -1,0 +1,35 @@
+<div class="container"> 
+<nav class="navbar navbar-expand-lg" id="navigation">
+    <a class="navbar-brand" href="#">Kitchen Story</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" [routerLink]="['/fooditems']" routerLinkActive="active">Food Items</a>
+        </li>
+        
+        </ul>
+      </div>  
+    <button class="btn btn-primary stick" [routerLink]="['/shoppingcart']" 
+              routerLinkActive="active" id="goTocart" (click)="goTocart()">
+              Go To Cart <i class="fa fa-shopping-cart" style="font-size:24px"></i>
+              <span class='badge badge-warning' id='lblCartCount'> {{getCartSize()}} </span>
+            </button>
+        <ul class="nav navbar-nav navbar-right">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle mr-sm-2" data-bs-toggle="dropdown" id="navbarDropdownMenuLink"
+            routerLinkActive="active" [routerLink]="['/myaccount']" 
+            role="button">
+            My Account
+            </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" [routerLink]="['/details']" routerLinkActive="active">Account Details</a></li>
+            <li><a class="dropdown-item" [routerLink]="['/changepassword']" routerLinkActive="active">Change Password</a></li>
+            <li><a class="dropdown-item" [routerLink]="['/signout']" routerLinkActive="active">Sign Out</a></li>
+          </ul>
+          </li>
+          </ul>
+  </nav>
+</div>

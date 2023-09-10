@@ -1,0 +1,23 @@
+#qtyInput{
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.row{
+    margin-bottom: 5px;
+}
+
+#goTocart{
+    background-color:brown;
+    color: white;
+    font-size:10px;
+    font-weight:bold;
+    
+}
+
+.stick{
+    position: sticky;
+    top:50px;
+    padding: 10px;
+    margin-left: 80%;
+   }

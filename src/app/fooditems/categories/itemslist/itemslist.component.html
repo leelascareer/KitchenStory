@@ -1,0 +1,25 @@
+<div class="container">
+    <button class="btn btn-primary stick" id="goTocart" (click)="goTocart()">Go To Cart</button>
+    <div class="itemLoop col-sm" *ngFor="let items of items">
+            <div class="row">
+            <div class="col-sm-2">
+                <img [src]= "items.imagePath" alt="" width="50px" height="50px">
+                <p [hidden]="items.id"></p>
+            </div>
+            <div class="col-sm-4">
+                {{items.description}}
+                <br>
+                {{items.price}}
+            </div>
+            <div class="col-sm-2">
+                <button class="btn btn-primary" (click)="addToCart(items.id)">Add To Cart</button>
+                <br>
+            </div>
+            <div class="col-sm-2">
+                <input id="qtyInput" type="number" min="1" max="10">
+                <label>Quantity</label>
+            </div>
+            <hr>
+        </div>
+    </div>
+</div>>

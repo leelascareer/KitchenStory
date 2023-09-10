@@ -1,0 +1,37 @@
+
+<h2 class="orderSuccess">
+    Congratulations!! Your Order is Placed
+    <br>
+    Our Delivery Partner Will Call You Soon.
+    <br>
+</h2>
+
+<div class="shpCartList list-group justify-content-start" *ngFor="let cItem of orderCart"> 
+    <div class="row">
+        <div class="itemImage d-flex justify-content-start col-sm-4">
+            <img [src]= "cItem.imagePath" alt="" width="50px" height="50px">
+            <p [hidden]="cItem.id"></p>
+            <div class="itemDesc">
+                {{cItem.description}}
+                <br>
+                <label><b>Price: </b></label>{{cItem.price}}              
+            </div>
+        </div>
+        <div class="itemQty d-flex justify-content-center">
+            <p class="itemQuantity" > {{orderCartMap.get(cItem.id)}}</p>
+            <br>
+        </div>
+        <div class="itemQty d-flex justify-content-end">
+            <p class="totalPrice">{{orderCartMap.get(cItem.id)*cItem.price}}</p>
+            <br>
+        </div>
+    </div>
+    <hr>
+</div>
+<div class="itemQty d-flex justify-content-end">
+    <label><b>Total Price:</b></label>{{totalPrice}}
+</div>
+<br>
+
+
+    

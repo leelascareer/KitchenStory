@@ -1,0 +1,21 @@
+<div class="container">
+    
+    <div class="itemLoop col-sm" *ngFor="let items of items">
+            <div class="row">
+            <div class="col-sm-2">
+                <img [src]= "items.imagePath" alt="" width="50px" height="50px">
+                <p [hidden]="items.id"></p>
+            </div>
+            <div class="col-sm-4">
+                <b>Description: </b> {{items.description}}
+                <br>
+                <b> Price </b>{{items.price}}
+            </div>
+            <div class="col-sm-2">
+                <button class="btn btn-primary" (click)="addToCart(items.id)">Add To Cart</button>
+                <br>
+            </div>
+            <hr>
+        </div>
+    </div>
+</div>>
