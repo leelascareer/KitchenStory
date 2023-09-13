@@ -1,3 +1,4 @@
+<div class="container">
 <div class="col 12 col-lg-3 col-md-4 col-xs-12">
     <div class="card" id="category" *ngFor="let ctg of categories" style="width: 18rem;">
         <img class="card-img-top" id="category-card" [src]="ctg.imagePath" alt={{ctg.category}} >
@@ -5,4 +6,5 @@
           <h5 class="card-title"><a [routerLink]="['/items',ctg.category]">{{ctg.category}}</a></h5>
         </div>
     </div>
+</div>
 </div>

@@ -30,6 +30,10 @@ goTocart(){
     this.router.navigate(['/shoppingcart']);
 }
 
+updateStock(id:number){
+//TO BE IMPLEMENTED
+} 
+
 increment(){}
 decrement(){}
 }
